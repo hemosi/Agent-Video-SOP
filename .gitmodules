@@ -1,0 +1,3 @@
+[submodule "weilanx-claude-videos"]
+	path = weilanx-claude-videos
+	url = https://github.com/Azure12355/weilanx-claude-videos.git
