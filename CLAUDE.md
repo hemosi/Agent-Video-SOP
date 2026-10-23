@@ -1,51 +1,43 @@
-# CLAUDE.md — Agent 知识类视频 SOP 全局工作规范
+# CLAUDE.md — Agent 高阶视觉叙事 × 机制推演知识视频全局规范
 
-本目录（`E:\AI自媒体\Agent知识类视频SOP`）是以「林佳佳」虚拟数字人为主讲的泛知识类视频（2~5 分钟，`1920×1080 @ 30fps`，涵盖 AI/代码科普、科技趋势、商业逻辑、社会观察、方法论拆解等）全自动生产工程目录。只读文档与拉片知识库位于 `E:\Obsidian_Note\知识库\04_领域\代码类视频`。
+本目录（`E:\AI自媒体\Agent知识类视频SOP`）是 2~5 分钟（`1920×1080 @ 30fps`）高阶动态视觉知识视频的全自动生产主目录。
 
 ---
 
-## 1. 核心架构：双核解耦（叙事节奏学小Lin × 视觉特效靠 23 个专业 Skill）
+## 1. 核心入口文档（动手前必读）
 
-1. **【叙事与节奏核】`xiaolin-director`（低视觉权重：只管讲故事、降维与节奏，0% 限定具体特效！）**
-   - 位置：[`.claude/skills/xiaolin-director/SKILL.md`](./.claude/skills/xiaolin-director/SKILL.md) 及 [`references/lapian-rules-compendium.md`](./.claude/skills/xiaolin-director/references/lapian-rules-compendium.md)。
-   - 职责：**只吸收小Lin说的讲故事结构、6 大留存钩子心机、10 大把专业概念变人话的降维公式、5~7 秒一次推进的剪辑节奏、林佳佳数字人三级出镜配比、以及配音气口与音效卡点**。
-   - **禁令**：**绝不规定、不限制任何具体的 UI 组件或固定特效模板**！严禁把财经图表、天平、圆球盖章等固定特效套用到所有视频里。
-2. **【开放视觉与动效核】筛选出的 23 个专业视觉 Skills（100% 视觉主导权，按每期题材自由创造）**
-   - 位置：[`.claude/skills/`](./.claude/skills/) 与 [`weilanx-claude-videos/styles/解说语法/`](./weilanx-claude-videos/styles/解说语法/)。
-   - 职责：每期视频的**美学基调（`motion-art-direction`、`color-motion`、`shot-composition`）、数字人舞台与工作台交互（`weilanx-creator-desk-video` / `vox-video` / `blackgold-video`）、电影级镜头与变形特效（`cinetic`、`motion-effects`、`title-sequence-3d`、`milestone-reveal`）、非线性弹簧缓动与运镜（`klik-anim`、`klik-cam`、`animation-principles`、`gsap-timeline/plugins`）**，100% 根据当期题材从零自由组合与设计！
-3. **主流程与声音资产入口**：
-   - 全链路 SOP：[`SOP.md`](./SOP.md)
+1. **视觉叙事与机制推演总导演 Skill**：[`.claude/skills/xiaolin-director/SKILL.md`](./.claude/skills/xiaolin-director/SKILL.md)
+2. **全链路主流程**：[`SOP.md`](./SOP.md)
+3. **64 万赞基准样片与抽帧参考**：[`参考视频/`](./参考视频/)（抽帧图位于 [`参考视频/extracted_frames/contact_sheet_part1.jpg`](./参考视频/extracted_frames/contact_sheet_part1.jpg) 与 `part2.jpg`，注意看它如何用 **100枚硬币翻转、粒子瀑布正态分布、巨型公式 `$S = k \cdot \log W$`、手绘金圈圈出「孤立」、以及结尾 3 件具体微行动** 来完成严密论证，绝不是画空洞风景画！）。
+4. **本机配音与无损音效入口**：
    - 本机配音自启动文档：[`Auk-TTS接口与视频配音使用文档.md`](./Auk-TTS接口与视频配音使用文档.md)
-   - 37 款无损音效索引：[`音效_精选/音效索引.md`](./音效_精选/音效索引.md) 与 [`音效_精选/sfx_manifest.json`](./音效_精选/sfx_manifest.json)（配合 `sfx/synth.py` 动态合成兜底；**严禁遍历原始未整理的音效文件夹**）。
+   - 37 款无损音效索引：[`音效_精选/音效索引.md`](./音效_精选/音效索引.md) 与 [`音效_精选/sfx_manifest.json`](./音效_精选/sfx_manifest.json)（配合 `sfx/synth.py` 合成兜底；**严禁遍历原始未整理的音效文件夹**）。
 
 ---
 
-## 2. 本机 Auk-TTS 自动检测与后台无阻塞启动（Audio First）
-1. **健康检查**：
+## 2. 四大核心生死线（同时斩断“PPT看板病”与“鸡汤屏保病”！）
+
+1. **【生死线一：一集只拆透 1 个底层科学/数学定律，严禁“散装例子凑鸡汤”】**
+   - 严禁先定一句励志口号（如“别怕犯错”），再去东拼西凑四五个毫无共同数学机制的例子（如把空调、DNA、肾脏、创业拼成一锅粥）！
+   - 每集必须锁定 **1 个具体的科学定律、数学公式或系统机制**，全片从「同源现象起兴 ➔ 微观算术/物理实验推导出公式 ➔ 投射回人自身与情感 ➔ 圈出定律破局变量」一竿子捅到底。
+2. **【生死线二：拒绝“抒情屏保风景画”，每个特效都必须是「可视化机制实验（Visual Proof）」】**
+   - 去掉 PPT 方框外壳，**绝不等于画空洞的风景屏保**！严禁台词在讲数据和机制，画面却在画毫不相干的“月亮下的树、夕阳下的桥、发光的河”！
+   - 每一个关键数字和机制，必须在画面中央用 **动态几何推导、粒子矩阵翻转、沙漏分布堆积、误差发散与反向纠偏、序列切除替换** 等可视化实验直接“算”出来、“演”出来！
+3. **【生死线三：巨型主字、大数字与公式直接入画当构图主角（Typography as Hero）】**
+   - 严禁画面空荡荡没有主字、把关键数字缩成 `20px` 贴角落、让观众只盯底部小字幕！
+   - **核心概念字 / 公式 / 推演大数字必须达到 `100px ~ 220px`**，**画面主命题句达到 `56px ~ 88px`（发光宋体）**，直接作为画面中央或半屏的主视觉参与构图与手绘金圈高亮；底部字幕无黑底框悬浮于 `y = 880`。
+4. **【生死线四：结尾必须是“定律破局眼 + 3 件具体微行动”，严禁万能鸡汤格言】**
+   - 严禁以“路是走出来的”这类空洞鸡汤或“欢迎在评论区聊聊”收尾！结尾必须圈出本集定律里可被主动干预的变量，列出 **3 件观众今晚就能做的具体生活小事（`✓ ...`）**，最后落在紧扣本集机制的一句洞察上干脆切黑。
+
+---
+
+## 3. 本机 Auk-TTS 自动检测与无黑屏渲染指令
+1. **Auk-TTS 健康检查与后台自启动**：
    ```bash
    curl -s http://127.0.0.1:7863/api/health
-   ```
-2. **未启动时的后台无阻塞自启动命令**（切勿直接同步执行带 `pause` 的 `.bat`，在 Bash 工具中用 `run_in_background: true` 执行以下命令，会自动拉起 `8080` 端口 `audiocpp_server.exe` 与 `7863` 端口网关）：
-   ```bash
+   # 若未启动，用 run_in_background: true 执行：
    cd "F:/Aku-tts/Auk-TTS/Auk-TTS" && "F:/Aku-tts/Auk-TTS/Auk-TTS/py312/python.exe" "F:/Aku-tts/Auk-TTS/Auk-TTS/app.py"
    ```
-3. **默认音色与铁律**：
-   - 可选音色：`小林`（`52920896bd09`）、`女主播`（`08482905d56e`）、`烛灵儿`（`3528e1c71180`）、`jok老师`（`cd792a2ee73c`）。
-   - **必须保持 `speed=1.0` 原生自然语速**，严禁调高 `speed` 或使用 `ffmpeg atempo` 二次加速；发送给 TTS 前必须用正则剥离剧本中的 `【】` 重音括号。
-
----
-
-## 3. 五大工程质量红线（实测防坑铁律，严禁违背）
-
-1. **【红线一：严禁复制上一集代码或套用固定特效顺序】**
-   - 每一集必须根据当期题材用 23 个视觉 Skill 全新设计视觉语言与特效，**绝对禁止复制上一期项目的 `engine.html` 场景绘制函数或照搬分镜顺序**！
-2. **【红线二：词组级渐进揭示，拒绝放 PPT 与拒绝无意义整屏缩放】**
-   - 台词没念到的信息绝不提前画在屏幕上！每个镜头按语音词组时间戳（`t1, t2, t3`）分步生长、变形或展开，每一次视觉动作 100% 绑定物理音效；遵循 `motion-art-direction` 的运动层级（Hero / Support / Texture），严禁对整张画布做机械的来回缩放。
-3. **【红线三：「林佳佳」数字人三级灵动出镜（严禁全屏裸放超过 3 秒）】**
-   - `55%~65%` 时长为角落灵动伴讲窗（`HostCam / PiP`，占屏高 `15%~20%`，随主视觉重心避让）；`20%~25%` 时长为半屏立体相框主讲（重点词 `100% ➔ 115%` 瞬切推近）；`15%~20%` 时长为纯全屏高燃视觉特效。
-4. **【红线四：实拍图片必过 `Read` 肉眼验图关 + 人像防斩首焦点裁剪】**
-   - 每张下载的图片必须立即调用 `Read` 肉眼审阅，淘汰原图无头、图文不符或带水印的照片。
-   - **严禁使用 `ctx.drawImage(img, cx - dw/2, cy - dh/2, dw, dh)` 几何居中裁剪**！必须在 `PHOTO_META` 中声明每张图的人物头部焦点 `(focalX, focalY)`，将头部锚定在视口上黄金位 `y + h * 0.30` 并钳制边界，确保 100% 零无头人像。
-5. **【红线五：零黑屏确定性渲染参数 + 文本框动态测量安全边距】**
-   - Playwright Chromium 渲染时必须传入 `--allow-file-access-from-files --disable-web-security --disable-gpu --disable-accelerated-2d-canvas --disable-gpu-compositing`，并在编码前通过像素均值扫描验证 `0 black frames`。
-   - 所有带边框/背景的文字容器宽度必须通过 `ctx.measureText(text).width + padX * 2`（`padX >= 48px`）动态计算，杜绝文字挤边或溢出。
+2. **静音遮字幕盲测门禁与无黑屏渲染**：
+   - 全量渲染前先用系统 `python` 跑 `--mode qa` 输出 `qa_contact_sheet.jpg` 并用 `Read` 检查：**遮住底部小字幕，只看画面中央的大字、公式和图形动效，必须能直接看懂论证过程**（若只是风景屏保或数字缩在角落，当场推翻重做）；
+   - Playwright Chromium 强制传入 `--allow-file-access-from-files --disable-web-security --disable-gpu --disable-accelerated-2d-canvas --disable-gpu-compositing`，确保 100% 零黑屏。
