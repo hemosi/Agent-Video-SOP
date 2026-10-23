@@ -18,3 +18,5 @@ build/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+sop_full_context.txt
